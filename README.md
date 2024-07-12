@@ -75,6 +75,14 @@ If it works like mine did GREAT well done, the tricky bit is over!
 
 ## UPDATING KLIPPER, MAINSAIL & MOONRAKER
 
+First you have to install the [mainsail-conf](https://github.com/mainsail-crew/mainsail-config) repository as they have moved the configuration and macros in a separate repository. If you don't do this klipper still works but there will be a few warnings. Login via SSH and use these commands:
+
+...
+cd ~
+git clone https://github.com/mainsail-crew/mainsail-config.git
+ln -sf ~/mainsail-config/mainsail.cfg ~/printer_data/config/mainsail.cfg
+...
+
 Open your web browser & head over to your printer. Then on Mainsail open the `Machine` tab & find your `moonraker.conf` file & paste in at the bottom
 
 moonraker.conf
